@@ -11,13 +11,16 @@
 
 /*Generics*/
 body{
-    background: linear-gradient(to bottom #009688 20% , #dbdbd3 80%);
+    background-image: linear-gradient( #009688 20% , #dbdbd3 20%);
 }
 main{
     border: dashed red 1px;
-    width: 1300px;
-    height: 790px;
-    margin-top: 50px;
+    height: 90vh;
+}
+img{
+    object-fit: cover;
+    width: 90px;
+    border-radius: 50%;
 }
 /*Utilties*/
 .bars_size{
@@ -44,7 +47,7 @@ main{
     width: 100%;
     height: calc(100% - 180px);
     background-image: url(../img/mine.jpg);
-    background-size: cover;
+    background-size: contain;
     overflow: auto;
 
 }
