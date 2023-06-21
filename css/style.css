@@ -25,6 +25,9 @@ img{
 h1{
     font-size: 22px;
 }
+h2{
+    font-size: 18px;
+}
 /*Utilties*/
 .bars_size{
     width: 100%;
@@ -51,6 +54,7 @@ h1{
 }
 .fa-bell-slash{
     color: #8edafc;
+    cursor: pointer;
 }
 .bell_bg{
     background-color: white;
