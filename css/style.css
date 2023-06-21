@@ -19,14 +19,18 @@ main{
 }
 img{
     object-fit: cover;
-    width: 90px;
+    width: 60px;
     border-radius: 50%;
+}
+h1{
+    font-size: 22px;
 }
 /*Utilties*/
 .bars_size{
     width: 100%;
     height: 90px;
     border: dashed black 1px;
+    background-color: #eaeaea;
 }
 
 /*USER SETTING*/
