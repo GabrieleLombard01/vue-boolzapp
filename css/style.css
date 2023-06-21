@@ -13,4 +13,10 @@
 body{
     background: linear-gradient(to bottom #009688 20% , #dbdbd3 80%);
 }
+main{
+    border: dashed red 1px;
+    width: calc(100% - 20%);
+    height: 89vh;
+    margin-top: 50px;
+}
 /*Utilties*/
