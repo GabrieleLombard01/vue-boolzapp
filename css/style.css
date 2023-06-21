@@ -10,5 +10,7 @@
 /*Pseudo-classes*/
 
 /*Generics*/
-
+body{
+    background: linear-gradient(to bottom #009688 20% , #dbdbd3 80%);
+}
 /*Utilties*/
