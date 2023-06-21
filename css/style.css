@@ -62,7 +62,30 @@ h2{
     width: 60px;
     border-radius: 50%;
 }
-
+.filter{
+    background-color: white;
+    height: calc(100% - 180px);
+    width: 100%;
+}
+.filter input{
+    width: 80%;
+    height: 85%;
+    border: solid grey 1px;
+    border-left-style: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#search_button{
+    padding: 7.7px 20px 7.7px 15px;
+    color: #b1b1b1;
+    background-color: white;
+    border-top: solid grey 1px;
+    border-right-style: none;
+    border-bottom: solid grey 1px;
+    border-left: solid grey 1px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
 /*CONTACTS:*/
 .contacts_box{
     width: 100%;
