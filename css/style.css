@@ -39,3 +39,12 @@ main{
     border: solid white 1px;
     overflow: auto;
 }
+/*CHAT-BOX:*/
+.chat_cont{
+    width: 100%;
+    height: calc(100% - 180px);
+    background-image: url(../img/mine.jpg);
+    background-size: cover;
+    overflow: auto;
+
+}
