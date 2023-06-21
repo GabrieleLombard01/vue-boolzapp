@@ -6,6 +6,9 @@
 }
 
 /*Custom properties*/
+.grey_color{
+    color: #b1b1b1;
+}
 
 /*Pseudo-classes*/
 
@@ -101,5 +104,4 @@ main .div_line{
     background-image: url(../img/mine.jpg);
     background-size: contain;
     overflow: auto;
-
 }
