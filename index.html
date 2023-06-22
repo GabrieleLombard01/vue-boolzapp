@@ -66,7 +66,7 @@
                         </div>
                         <!--? CONTACTS -->
                         <div class="contacts_box">
-                            <div class="contact" v-for="contact in contacts" :key="contact.id">
+                            <div class="contact" v-for="contact in contacts" :key="contact.id" :id="'contact_' + contact.id">
                               <div class="col-3 ps-2">
                                 <img :src="getAvatarUrl(contact.avatar)" alt="Avatar">
                               </div>
@@ -75,10 +75,11 @@
                               </div>
                             </div>
                           </div>
+                          
                     </div>
                     <!-- CHAT BOX: -->
                     <div class="col-8 bg-secondary">
-                        <div class="bars_size grey_color d-flex justify-content-center align-items-center">
+                        <div id="contact_header" class="bars_size grey_color d-flex justify-content-center align-items-center">
                             <div class="col-1 pt-3">
                                 <figure class="p-3">
                                     <img class="" src="img/avatar_1.jpg" alt="Username">
