@@ -209,7 +209,8 @@ const app = Vue.createApp({
         getAvatarUrl(avatar) {
           return `img/avatar${avatar}.jpg`;
         }
-      }
+    }
+    
     
 });
 
