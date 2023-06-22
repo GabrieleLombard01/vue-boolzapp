@@ -15,7 +15,7 @@ const app = Vue.createApp({
                 {
                   id: 1,
                   name: 'Michele',
-                  avatar: '_1',
+                  avatar: '_1.jpg',
                   visible: true,
                   messages: [
                     {
@@ -207,9 +207,10 @@ const app = Vue.createApp({
     },
     methods: {
         getAvatarUrl(avatar) {
-          return `path/to/avatars/${avatar}.jpg`; // Sostituisci con il percorso corretto delle immagini degli avatar
+          return `img/${avatar}.jpg`;
         }
       }
+    
 });
 
 app.mount('#root');
