@@ -15,7 +15,7 @@ const app = Vue.createApp({
                 {
                   id: 1,
                   name: 'Michele',
-                  avatar: '_1.jpg',
+                  avatar: '_1',
                   visible: true,
                   messages: [
                     {
@@ -133,7 +133,7 @@ const app = Vue.createApp({
                 {
                   id: 6,
                   name: 'Claudia',
-                  avatar: '_5',
+                  avatar: '_6',
                   visible: true,
                   messages: [
                     {
@@ -207,7 +207,7 @@ const app = Vue.createApp({
     },
     methods: {
         getAvatarUrl(avatar) {
-          return `img/${avatar}.jpg`;
+          return `img/avatar${avatar}.jpg`;
         }
       }
     
