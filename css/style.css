@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/*Custom properties*/
+/*Colors*/
 .grey_color{
     color: #b1b1b1;
 }
@@ -114,6 +114,14 @@ main .div_line{
     height: 70%;
     overflow-y: auto;
 }
+.contact{
+    height: 90px;
+    width: 100%;
+    background-color: rgb(188, 232, 218);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;                         
+}
 
 /*CHAT-BOX:*/
 .chat_cont{
@@ -136,3 +144,16 @@ main .div_line{
     border-radius: 10px;
 }
 
+/**********************************************************************/
+
+/*! RESPONSIVE: */
+
+/*? Desktop-first: */
+@media screen and (max-width:992px) {}
+
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:576px) {}
+
+
+        
