@@ -57,6 +57,9 @@ h2{
 main .div_line{
     border-right: solid #5e5efd 1px;
 }
+:focus-visible{
+    outline-style: none;
+}
 
 /**********************************************************************/
 
