@@ -207,13 +207,8 @@ const app = Vue.createApp({
     },
     //CONTATTI:
     methods: {
-        getAvatarUrl(avatar) {
-          return `img/avatar${avatar}.jpg`;
-        }
-        
+        getAvatarUrl: ({avatar}) => `img/avatar${avatar}.jpg`
     }
-    
-    
 });
 
 app.mount('#root');
