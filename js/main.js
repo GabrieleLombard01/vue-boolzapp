@@ -7,7 +7,7 @@ console.log('Vue OK', Vue);
 const app = Vue.createApp({
     data() {
         return {
-            currentIndex: 0,
+            currentIndex: null,
             user: {
                 name: 'Nome Utente',
                 avatar: '_io'
@@ -207,8 +207,9 @@ const app = Vue.createApp({
         }
     },
     computed:{
+      // CONTROLLO TRAMITE DATO ID
       currentContact() {
-        return this.contacts[this.currentIndex]
+        return this.contacts.find(contact => contact.id === this.currentIndex)
       }
     },
     //GENERAZIONE SRC CONTATTI:
@@ -219,6 +220,9 @@ const app = Vue.createApp({
         setCurrentIndex(number){
           this.currentIndex = number;
         }
+    },
+    created(){
+      this.currentIndex = this.contacts[0].id;
     }
 });
 

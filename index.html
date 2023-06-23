@@ -72,7 +72,7 @@
 
                         <!--? CONTACTS -->
                         <div class="contacts_box">
-                            <div class="contact" v-for="(contact, i) in contacts" @click="setCurrentIndex(i)">
+                            <div class="contact" v-for="contact in contacts" @click="setCurrentIndex(contact.id)">
                               <div class="col-3 ps-2">
                                 <img :src="getAvatarUrl(contact)" alt="Avatar">
                               </div>
@@ -108,11 +108,13 @@
 
                         <!--? CHAT-CONTAINER:-->
                         <div class="chat_cont p-5 ">
-                            <ul class="col">
-                                <li v-for="message in currentContact.messages" class="mb-3 message_container message p-2 rounded-3 sent">
-                                    <p>Hai portato a spasso il cane?</p>
+                            <ul class="col message_container">
+                                <li v-for="m in currentContact.messages" class="mb-3 message p-2 rounded-3" :class="m.status">
+                                    <p>{{m.message}}</p>
+                                    <time class="darkgrey_color" datetime="2023-08-03T09:53">{{m.date}}</time>
+                                    
+                    
                                 </li>
-                                
                             </ul>
                         </div>
 

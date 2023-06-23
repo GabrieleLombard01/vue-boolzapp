@@ -146,8 +146,10 @@ main .div_line{
 }
 .sent{
     background-color: #d5f9ba;
-    position: relative;
-    
+    margin-left: 70%;
+}
+.received{
+    background-color: white;
 }
 /*TEXT AREA:*/
 .user_text{
