@@ -89,11 +89,11 @@
                         <div id="contact_header" class="bars_size grey_color d-flex justify-content-center align-items-center">
                             <div class="col-1 pt-3">
                                 <figure class="p-3">
-                                    <img class="getAvatarUrl(contacts[currentIndex])" src="img/avatar_1.jpg" :alt="contacts[currentIndex].name">
+                                    <img :src="getAvatarUrl(currentContact)" :alt="currentContact.name">
                                 </figure>
                             </div>
                             <div class="col-7 ps-3">
-                                <h1 class="text-black">{{contacts[currentIndex].name}}</h1>
+                                <h1 class="text-black">{{currentContact.name}}</h1>
                                 <div>
                                     <span class="darkgrey_color">ultimo accesso oggi alle</span>
                                 </div>
@@ -109,7 +109,7 @@
                         <!--? CHAT-CONTAINER:-->
                         <div class="chat_cont p-5">
                             <ul>
-                                <li v-for="message in contacts[currentIndex].messages" class="message_container sent">
+                                <li v-for="message in currentContact.messages" class="message_container sent">
                                     <div class="message p-2 rounded-3">
                                         <p>Hai portato a spasso il cane?.</p>
                                     </div>

@@ -206,6 +206,11 @@ const app = Vue.createApp({
             ]
         }
     },
+    computed:{
+      currentContact() {
+        return this.contacts[this.currentIndex]
+      }
+    },
     //GENERAZIONE SRC CONTATTI:
     methods: {
         getAvatarUrl(person) {
