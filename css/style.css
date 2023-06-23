@@ -47,7 +47,9 @@ h1{
 h2{
     font-size: 18px;
 }
-
+li{
+    list-style: none;
+}
 /*Utilties*/
 .bars_size{
     width: 100%;
@@ -139,11 +141,14 @@ main .div_line{
     overflow: auto;
 }
 .message{
-    border: solid black 1px;
     width: fit-content;
-    max-width: 80%;
+    box-shadow: 1px 1px 3px 3px rgb(143, 143, 143);
 }
-
+.sent{
+    background-color: #d5f9ba;
+    position: relative;
+    
+}
 /*TEXT AREA:*/
 .user_text{
     height: 90px;

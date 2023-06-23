@@ -107,13 +107,12 @@
 
 
                         <!--? CHAT-CONTAINER:-->
-                        <div class="chat_cont p-5">
-                            <ul>
-                                <li v-for="message in currentContact.messages" class="message_container sent">
-                                    <div class="message p-2 rounded-3">
-                                        <p>Hai portato a spasso il cane?.</p>
-                                    </div>
+                        <div class="chat_cont p-5 ">
+                            <ul class="col">
+                                <li v-for="message in currentContact.messages" class="mb-3 message_container message p-2 rounded-3 sent">
+                                    <p>Hai portato a spasso il cane?</p>
                                 </li>
+                                
                             </ul>
                         </div>
 
