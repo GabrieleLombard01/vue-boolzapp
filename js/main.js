@@ -215,7 +215,10 @@ const app = Vue.createApp({
     methods: {
         getAvatarUrl(person) {
           return `img/avatar${person.avatar}.jpg` 
-        } 
+        }, 
+        setCurrentIndex(number){
+          this.currentIndex = number;
+        }
     }
 });
 

@@ -72,7 +72,7 @@
 
                         <!--? CONTACTS -->
                         <div class="contacts_box">
-                            <div class="contact" v-for="contact in contacts">
+                            <div class="contact" v-for="(contact, i) in contacts" @click="setCurrentIndex(i)">
                               <div class="col-3 ps-2">
                                 <img :src="getAvatarUrl(contact)" alt="Avatar">
                               </div>
