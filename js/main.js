@@ -8,6 +8,7 @@ const app = Vue.createApp({
     data() {
         return {
             currentIndex: null,
+            newMessage: '',
             user: {
                 name: 'Nome Utente',
                 avatar: '_io'
@@ -212,13 +213,29 @@ const app = Vue.createApp({
         return this.contacts.find(contact => contact.id === this.currentIndex)
       }
     },
-    //GENERAZIONE SRC CONTATTI:
-    methods: {
+   
+    methods: { 
+      //GENERAZIONE SRC CONTATTI:
         getAvatarUrl(person) {
           return `img/avatar${person.avatar}.jpg` 
         }, 
         setCurrentIndex(number){
           this.currentIndex = number;
+        },
+        //MANDA MESSAGGIO PERSONALIZZATO:
+        sendMessage(){
+          if (!this.newMessage) return;
+
+          const message = {
+            id: new Date().getTime(),
+            date: new Date().toLocaleString(),
+            message: this.newMessage,
+            status: 'sent'
+          };
+
+          this.currentChat.push(message);
+
+          this.newMessage = '';
         }
     },
     created(){
