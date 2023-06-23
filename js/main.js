@@ -233,7 +233,7 @@ const app = Vue.createApp({
             status: 'sent'
           };
 
-          this.currentChat.push(message);
+          this.currentContact.messages.push(message);
 
           this.newMessage = '';
         }
