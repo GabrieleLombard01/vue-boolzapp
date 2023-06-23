@@ -138,6 +138,11 @@ main .div_line{
     background-size: contain;
     overflow: auto;
 }
+.message{
+    border: solid black 1px;
+    width: fit-content;
+    max-width: 80%;
+}
 
 /*TEXT AREA:*/
 .user_text{

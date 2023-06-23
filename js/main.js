@@ -7,6 +7,7 @@ console.log('Vue OK', Vue);
 const app = Vue.createApp({
     data() {
         return {
+            currentIndex: 0,
             user: {
                 name: 'Nome Utente',
                 avatar: '_io'
@@ -205,9 +206,11 @@ const app = Vue.createApp({
             ]
         }
     },
-    //CONTATTI:
+    //GENERAZIONE SRC CONTATTI:
     methods: {
-        getAvatarUrl: ({avatar}) => `img/avatar${avatar}.jpg`
+        getAvatarUrl(person) {
+          return `img/avatar${person.avatar}.jpg` 
+        } 
     }
 });
 
