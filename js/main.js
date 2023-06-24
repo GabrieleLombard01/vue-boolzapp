@@ -9,6 +9,7 @@ const app = Vue.createApp({
         return {
             currentIndex: null,
             newMessage: '',
+            searchedName: '',
             user: {
                 name: 'Nome Utente',
                 avatar: '_io'
@@ -211,7 +212,13 @@ const app = Vue.createApp({
       // CONTROLLO TRAMITE DATO ID
       currentContact() {
         return this.contacts.find(contact => contact.id === this.currentIndex)
-      }
+      },
+      // FILTRA NOMI CONTATTI:
+      filteredNames() {
+          return this.contacts.filter(contact => {
+          return contact.name.toLowerCase().includes(this.searchedName.toLowerCase());
+        });
+      },
     },
    
     methods: { 

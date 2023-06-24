@@ -65,20 +65,20 @@
                                 <span>
                                     <button id="search_button"><i class="fa-solid fa-magnifying-glass"></i></button>
                                 </span>
-                                <input type="search" placeholder="Cerca o inizia una nuova chat">
+                                <input type="search" v-model="searchedName" placeholder="Cerca o inizia una nuova chat">
                             </div>
                         </div>
 
 
                         <!--? CONTACTS -->
                         <div class="contacts_box">
-                            <div class="contact" v-for="contact in contacts" @click="setCurrentIndex(contact.id)">
-                              <div class="col-3 ps-2">
-                                <img :src="getAvatarUrl(contact)" alt="Avatar">
-                              </div>
-                              <div class="col-9">
-                                <h1>{{ contact.name }}</h1>
-                              </div>
+                            <div class="contact" v-for="contact in filteredNames" @click="setCurrentIndex(contact.id)">
+                                <div class="col-3 ps-2">
+                                    <img :src="getAvatarUrl(contact)" alt="Avatar">
+                                </div>
+                                <div class="col-9">
+                                    <h1>{{ contact.name }}</h1>
+                                </div>
                             </div>
                           </div>
                     </div>
